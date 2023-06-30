@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-##Write a Bash script that displays:
-##The content of the current directory
-##In a list format
-##Where only the part of the name after the first dash is displayed
-#for file in *
-#do
-#	echo "${file##*-}"
-#	done
+# This script displays the content of the current directory in list format
+# Only displays the part of the name after the first dash
+
+mylist=$(ls)
+
+for i in $mylist; do
+  echo "$i" | cut -d '-' -f2
+done
