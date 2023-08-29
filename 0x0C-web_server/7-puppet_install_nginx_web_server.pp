@@ -5,7 +5,7 @@ package { 'nginx':
 }
 file { '/var/www/html/index.html':
   ensure  => present,
-  content => 'Holberton School'
+  content => 'Hello World!'
 }
 file_line { 'Redirection':
   ensure => present,
