@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# 1. Run Nginx as Nginx
+pkill -f apache2
+sed -i "s/80/8080/" /etc/nginx/sites-enabled/default
+chmod --reference=/etc/nginx/proxy_params /etc/nginx/nginx.conf
+sudo -u nginx service nginx start
