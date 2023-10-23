@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Variables for backend server addresses
 BACKEND_SERVER_1="253197-web-01"
 BACKEND_SERVER_1_IP="35.153.98.51"
